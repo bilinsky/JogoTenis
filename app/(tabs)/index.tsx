@@ -15,7 +15,9 @@ const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 
-function HomeScreen({ navigation }) {
+import { NavigationProp } from '@react-navigation/native';
+
+function HomeScreen({ navigation }: { navigation: NavigationProp<any> }) {
   return (
     <ImageBackground
     source={require('../../assets/images/tennis-background.jpg')}
